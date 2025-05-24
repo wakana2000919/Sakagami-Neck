@@ -1,0 +1,330 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: rgb(23, 67, 31,255);
+}
+
+/* header */
+.header-image {
+    background-image: url(../image/sakagami_header_pc.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    width: 100%;
+    max-height: 100vh;
+    aspect-ratio: 16/9;
+    position: relative;
+}
+
+.header-image img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+}
+
+.navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    background-color: transparent;
+}
+
+.navbar-toggler {
+    border-color: white;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='white' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+.navbar .nav-link {
+    font-family: "Crimson Text", serif;
+    font-size: 23px;
+    color: white;
+}
+
+.navbar .nav-link:hover {
+    color: darkgoldenrod;
+}
+
+/* imtroduction */
+.sakagami-neck {
+    margin-top: 70px;
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 50px;
+}
+
+/* about */
+.about-title {
+    font-family: "Crimson Text", serif;
+    text-align: center;
+    color: darkgoldenrod;
+    font-weight: bold;
+    font-size: 27px;
+    margin-top: 100px;
+    margin-bottom: 60px;
+}
+
+.about-text p {
+    color: white;
+    text-align: center;
+    font-size: 19px;
+    margin-bottom: 50px;
+}
+
+/* products */
+.product-title {
+    font-family: "Crimson Text", serif;
+    text-align: center;
+    color: darkgoldenrod;
+    font-weight: bold;
+    font-size: 27px;
+    margin-top: 250px;
+    margin-bottom: 20px;
+}
+
+.product-item {
+    color: white;
+    margin-left: 60px;
+    margin-top: 100px;
+    display: inline-block;
+}
+
+.active-facets {
+    border-top: 1px solid white;
+    margin-top: 20px;
+    padding-top: 1rem;
+}
+
+.card {
+    margin-top: 30px;
+    border-radius: 0;
+}
+
+.card-img-top {
+    object-fit: cover;
+    height: 250px;
+    border-radius: 0;
+}
+
+
+/* contact */
+.contact-title {
+    font-family: "Crimson Text", serif;
+    text-align: center;
+    color: darkgoldenrod;
+    font-weight: bold;
+    font-size: 27px;
+    margin-top: 200px;
+    margin-bottom: 50px;
+}
+
+.contact-icon {
+    align-items: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 35px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+.contact-item {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-size: 20px;
+    font-family: "Crimson Text", serif;
+}
+
+.contact-item i {
+    font-size: 20px;
+    margin-right: 0.5rem;
+    color: whitesmoke;
+}
+
+.contact-info {
+    font-size: 25px;
+    color: white;
+    text-decoration: none;
+}
+
+.contact-text {
+    color: white;
+    font-size: 13px;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.contact-item :hover {
+    color: goldenrod;
+    text-decoration: underline;
+}
+
+
+/* footer */
+footer {
+    color: white;
+    background-color: black;
+    margin-top: 150px;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.footer-list {
+    font-family: "Crimson Text", serif;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.footer-list li a {
+    color: white;
+    text-decoration: none;
+    font-size: 23px;
+}
+
+.footer-list li a:hover {
+    color: darkgoldenrod;
+}
+
+p {
+    text-align: center;
+    margin: 0;
+    font-size: 13px;
+    margin-top: 70px;
+    color: white;
+}
+
+
+
+@media (max-width: 767px) {
+    body {
+      padding: 0;
+      margin: 0;
+      font-size: 14px;
+    }
+  
+    .navbar .nav-link {
+      font-size: 14px;
+      padding: 5px 10px;
+    }
+  
+    .navbar-toggler {
+        transform: scale(0.5);
+    }
+
+    .navbar {
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+
+    .header-image {
+        text-align: center;
+        background-image: url(../image/sakagami_header_pc.jpg);
+        aspect-ratio: auto;
+        height: 40vh;
+        background-position: center top;
+    }
+
+    .sakagami-neck {
+        font-size: 1.2rem;
+        text-align: center;
+        padding: 1rem;
+    }
+
+    .about-title,
+    .product-title,
+    .contact-title {
+      font-size: 20px;
+    }
+  
+    .about-text p {
+        font-size: 0.9rem;
+        line-height: 1.5;
+    }
+
+    .contact-text {
+        font-size: 0.7rem;
+        line-height: 1.5;
+    }
+
+    .contact-info {
+      font-size: 15px;
+    }
+  
+    .contact-icon {
+        flex-direction: column;
+        gap: 0.8rem;
+        align-items: center;
+    }
+
+    .product-item {
+      margin-left: 10px;
+      margin-top: 30px;
+      font-size: 14px;
+    }
+  
+    .card {
+        border-radius: 0;
+    }
+
+    .card-img-top {
+      height: 170px; 
+      border-radius: 0;
+    }
+  
+    footer {
+        width: 100vw;
+        background-color: black;
+        color: white;
+        padding: 20px;
+        overflow-x: hidden;
+    }
+
+    .footer {
+        padding: 0;
+        margin: 0 auto;
+    }
+
+    .footer-list {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+        list-style: none;
+        padding-left: 0;
+        margin-bottom: 50px;
+    }
+
+    .footer-list li a {
+        font-size: 15px;
+    }
+
+    footer p {
+      text-align: center;
+      font-size: 7px;
+      margin: 0;
+    }
+  }
+
+
+  #About ,#Products ,#Contact {
+    scroll-margin-top: 100px;
+  }
